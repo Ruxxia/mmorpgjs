@@ -1,13 +1,57 @@
 name = 'My Game'
 
 modules = [
+    '@rpgjs/chat',
+    '@rpgjs/title-screen',
+    'rpgjs-character-select',
     './main',
-    '@rpgjs/mobile-gui',
+    './spritesheets',
     '@rpgjs/default-gui',
     '@rpgjs/gamepad'
 ]
 
+spritesheetDirectories = [
+    'lpc/heads',
+    'lpc/bodies',
+    'lpc/accessories',
+    'lpc/torso',
+    'lpc/legs',
+    'lpc/hair',
+    'lpc/ears',
+]
+
+[titleScreen]
+    title = 'My game'
+    mongodb = 'mongodb://0.0.0.0:27017/rpgjs'
+
 [start]
     map = 'simplemap'
-    graphic = 'hero'
-    hitbox = [16, 16]
+    hitbox = [32, 32]
+
+[characterSelect]
+  actors = [
+    'human',
+    'elf',
+    'vampire',
+  ]
+
+[inputs.up]
+    name = "up"
+    repeat = true
+    bind = ["up", "w"]
+
+[inputs.down]
+    name = "down"
+    repeat = true
+    bind = ["down", "s"]
+
+
+[inputs.right]
+    name = "right"
+    repeat = true
+    bind = ["right", "d"]
+
+[inputs.left]
+    name = "left"
+    repeat = true
+    bind = ["left", "a"]
