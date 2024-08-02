@@ -12,6 +12,7 @@ const player: RpgPlayerHooks = {
         }
     },
     async onJoinMap(player: RpgPlayer) {
+        player.save();
     },
     onCharacterSelected(player: RpgPlayer, actorId: string) {
         player.setActor(actorId);
@@ -23,7 +24,10 @@ const player: RpgPlayerHooks = {
             ...graphics.pernament,
             ...Object.values(graphics.baseEquipment)
         ])
-    }
+    },
+    onDisconnected(player) {
+        player.save()
+    },
 }
 
 export default player
