@@ -1,7 +1,6 @@
 name = 'My Game'
 
 modules = [
-    '@rpgjs/chat',
     '@rpgjs/title-screen',
     'rpgjs-character-select',
     './main',
@@ -55,3 +54,13 @@ spritesheetDirectories = [
     name = "left"
     repeat = true
     bind = ["left", "a"]
+
+[inputs.slash]
+    name = "slash"
+    repeat = false
+    bind = "f"
+
+[inputs.shoot]
+    name = "shoot"
+    repeat = false
+    bind = "g"

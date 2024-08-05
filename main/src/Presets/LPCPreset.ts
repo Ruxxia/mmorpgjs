@@ -11,7 +11,7 @@ export const LPCSpritesheet = () => {
         }[direction]
     }
 
-    const stand = (direction: Direction) => [{ time: 0, frameX: 1, frameY: frameY(direction) }]
+    const stand = (direction: Direction) => [{ time: 0, frameX: 0, frameY: frameY(direction) }]
     const anim = (direction: Direction, framesWidth: number, duration: number = 5) => {
         const array: any = []
         for (let i = 0; i < framesWidth; i++) {
@@ -45,9 +45,9 @@ export const LPCSpritesheet = () => {
                 },
                 framesWidth: 9,
                 framesHeight: 4,
-                animations: (direction: Direction) => [anim(direction, 9, 15)]
+                animations: (direction: Direction) => [anim(direction, 8, 10)]
             },
-            [Animation.Attack]: {
+            ['slash']: {
                 offset: {
                     x: 0,
                     y: 768,
@@ -68,3 +68,4 @@ export const LPCSpritesheet = () => {
         },
     }
 }
+
