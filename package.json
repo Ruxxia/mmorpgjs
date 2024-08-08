@@ -16,8 +16,9 @@
         "@rpgjs/mobile-gui": "^4.3.0",
         "@rpgjs/server": "4.3.0",
         "@rpgjs/standalone": "4.3.0",
-        "@rpgjs/title-screen": "^4.3.1",
         "@rpgjs/types": "4.0.5",
+        "mongoose": "^8.5.2",
+        "mongoose-bcrypt": "^1.11.0",
         "rpgjs-character-select": "^1.1.2",
         "socket.io-client": "4.7.2"
     },

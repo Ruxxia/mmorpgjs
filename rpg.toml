@@ -1,12 +1,9 @@
-name = 'My Game'
-
 modules = [
-    '@rpgjs/title-screen',
+    '@rpgjs/default-gui',
+    './main/modules/title-screen',
     'rpgjs-character-select',
     './main',
-    './spritesheets',
-    '@rpgjs/default-gui',
-    '@rpgjs/gamepad'
+    './spritesheets'
 ]
 
 spritesheetDirectories = [
@@ -21,6 +18,7 @@ spritesheetDirectories = [
 
 [titleScreen]
     title = 'My game'
+    music = 'menu'
     mongodb = '$ENV:VITE_MONGODB_URL'
 
 [start]

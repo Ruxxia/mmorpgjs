@@ -6,6 +6,7 @@ const player: RpgPlayerHooks = {
     onConnected(player: RpgPlayer) {
         player.speed = 2.3
         player.name = 'YourName'
+        player.cameraFollow(player)
         player.setComponentsTop(Components.text('{name}'))
     },
     onInput(player: RpgPlayer, { input }) {

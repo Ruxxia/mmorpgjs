@@ -1,0 +1,35 @@
+{
+    "namespace": "titleScreen",
+    "server": {
+        "type": "object",
+        "properties": {
+            "mongodb": {
+                "type": "string"
+            },
+            "title": {
+                "type": "string"
+            },
+            "music": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "mongodb"
+        ]
+    },
+    "client": {
+        "type": "object",
+        "properties": {
+            "apiUrl": {
+                "type": "string"
+            },
+            "title": {
+                "type": "string"
+            },
+            "music": {
+                "type": "string"
+            }
+        }
+    },
+    "*": {}
+}
