@@ -22,7 +22,7 @@ spritesheetDirectories = [
     mongodb = '$ENV:VITE_MONGODB_URL'
 
 [start]
-    map = 'simplemap'
+    map = 'world'
     hitbox = [32, 32]
 
 [characterSelect]
